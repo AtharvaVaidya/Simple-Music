@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC0DE1451B70D2010051B738 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0DE1441B70D2010051B738 /* CustomSlider.swift */; };
+		ECFA11CE1B6DFEC300124114 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFA11CD1B6DFEC300124114 /* AppDelegate.swift */; };
+		ECFA11D01B6DFEC300124114 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFA11CF1B6DFEC300124114 /* ViewController.swift */; };
+		ECFA11D31B6DFEC300124114 /* SimpleMusic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECFA11D11B6DFEC300124114 /* SimpleMusic.xcdatamodeld */; };
+		ECFA11D51B6DFEC300124114 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECFA11D41B6DFEC300124114 /* Assets.xcassets */; };
+		ECFA11D81B6DFEC300124114 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECFA11D61B6DFEC300124114 /* Main.storyboard */; };
+		ECFA11E21B6E027400124114 /* MusicDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFA11E11B6E027400124114 /* MusicDataModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EC0DE1441B70D2010051B738 /* CustomSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
+		ECFA11CA1B6DFEC300124114 /* SimpleMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECFA11CD1B6DFEC300124114 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ECFA11CF1B6DFEC300124114 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ECFA11D21B6DFEC300124114 /* SimpleMusic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleMusic.xcdatamodel; sourceTree = "<group>"; };
+		ECFA11D41B6DFEC300124114 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECFA11D71B6DFEC300124114 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECFA11D91B6DFEC300124114 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECFA11E11B6E027400124114 /* MusicDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicDataModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECFA11C71B6DFEC300124114 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECFA11C11B6DFEC200124114 = {
+			isa = PBXGroup;
+			children = (
+				ECFA11CC1B6DFEC300124114 /* SimpleMusic */,
+				ECFA11CB1B6DFEC300124114 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECFA11CB1B6DFEC300124114 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECFA11CA1B6DFEC300124114 /* SimpleMusic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECFA11CC1B6DFEC300124114 /* SimpleMusic */ = {
+			isa = PBXGroup;
+			children = (
+				ECFA11E01B6E025500124114 /* Model */,
+				ECFA11DF1B6E024D00124114 /* GUI */,
+				ECFA11D91B6DFEC300124114 /* Info.plist */,
+				ECFA11D11B6DFEC300124114 /* SimpleMusic.xcdatamodeld */,
+			);
+			path = SimpleMusic;
+			sourceTree = "<group>";
+		};
+		ECFA11DF1B6E024D00124114 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				EC0DE1441B70D2010051B738 /* CustomSlider.swift */,
+				ECFA11CF1B6DFEC300124114 /* ViewController.swift */,
+				ECFA11D41B6DFEC300124114 /* Assets.xcassets */,
+				ECFA11D61B6DFEC300124114 /* Main.storyboard */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		ECFA11E01B6E025500124114 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECFA11CD1B6DFEC300124114 /* AppDelegate.swift */,
+				ECFA11E11B6E027400124114 /* MusicDataModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECFA11C91B6DFEC300124114 /* SimpleMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECFA11DC1B6DFEC300124114 /* Build configuration list for PBXNativeTarget "SimpleMusic" */;
+			buildPhases = (
+				ECFA11C61B6DFEC300124114 /* Sources */,
+				ECFA11C71B6DFEC300124114 /* Frameworks */,
+				ECFA11C81B6DFEC300124114 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleMusic;
+			productName = SimpleMusic;
+			productReference = ECFA11CA1B6DFEC300124114 /* SimpleMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECFA11C21B6DFEC200124114 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Atharva Vaidya";
+				TargetAttributes = {
+					ECFA11C91B6DFEC300124114 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = H27J42LAW5;
+					};
+				};
+			};
+			buildConfigurationList = ECFA11C51B6DFEC200124114 /* Build configuration list for PBXProject "SimpleMusic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECFA11C11B6DFEC200124114;
+			productRefGroup = ECFA11CB1B6DFEC300124114 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECFA11C91B6DFEC300124114 /* SimpleMusic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECFA11C81B6DFEC300124114 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECFA11D51B6DFEC300124114 /* Assets.xcassets in Resources */,
+				ECFA11D81B6DFEC300124114 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECFA11C61B6DFEC300124114 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECFA11D01B6DFEC300124114 /* ViewController.swift in Sources */,
+				EC0DE1451B70D2010051B738 /* CustomSlider.swift in Sources */,
+				ECFA11E21B6E027400124114 /* MusicDataModel.swift in Sources */,
+				ECFA11D31B6DFEC300124114 /* SimpleMusic.xcdatamodeld in Sources */,
+				ECFA11CE1B6DFEC300124114 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ECFA11D61B6DFEC300124114 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECFA11D71B6DFEC300124114 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECFA11DA1B6DFEC300124114 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ECFA11DB1B6DFEC300124114 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		ECFA11DD1B6DFEC300124114 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SimpleMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Atharva.SimpleMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ECFA11DE1B6DFEC300124114 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SimpleMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Atharva.SimpleMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECFA11C51B6DFEC200124114 /* Build configuration list for PBXProject "SimpleMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECFA11DA1B6DFEC300124114 /* Debug */,
+				ECFA11DB1B6DFEC300124114 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECFA11DC1B6DFEC300124114 /* Build configuration list for PBXNativeTarget "SimpleMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECFA11DD1B6DFEC300124114 /* Debug */,
+				ECFA11DE1B6DFEC300124114 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ECFA11D11B6DFEC300124114 /* SimpleMusic.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ECFA11D21B6DFEC300124114 /* SimpleMusic.xcdatamodel */,
+			);
+			currentVersion = ECFA11D21B6DFEC300124114 /* SimpleMusic.xcdatamodel */;
+			path = SimpleMusic.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ECFA11C21B6DFEC200124114 /* Project object */;
+}

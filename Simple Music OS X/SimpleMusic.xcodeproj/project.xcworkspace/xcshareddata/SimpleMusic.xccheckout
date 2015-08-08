@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>ACD0A5E6-396F-4737-A47D-F16FC634F836</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SimpleMusic</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C06BD3D2FEDAA2AD6AA581B3550CF309B4073CEA</key>
+		<string>https://github.com/TechieCSG/Simple-Music.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Simple Music OS X/SimpleMusic.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C06BD3D2FEDAA2AD6AA581B3550CF309B4073CEA</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/TechieCSG/Simple-Music.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C06BD3D2FEDAA2AD6AA581B3550CF309B4073CEA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C06BD3D2FEDAA2AD6AA581B3550CF309B4073CEA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Simple%20Music</string>
+		</dict>
+	</array>
+</dict>
+</plist>
