@@ -41,6 +41,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        tableView.clickedRow
     }
 
     override var representedObject: AnyObject?
@@ -90,12 +91,12 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
             
             if tableColumn?.identifier == "Album"
             {
-                
+                cellView.textField?.stringValue = "\(musicData.audioFileAlbumNames[row])"
             }
             
             if tableColumn?.identifier == "Artist"
             {
-                
+                cellView.textField?.stringValue = "\(musicData.audioFileArtistNames[row])"
             }
 
         }
@@ -104,7 +105,6 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     
     @IBAction func addSongByReference(sender: NSMenuItem)
     {
-        println("Called method in app delegate")
         let openDialog = NSOpenPanel()
         openDialog.canChooseFiles = true
         openDialog.canChooseDirectories = true
@@ -119,15 +119,28 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
             for filePath in filePaths
             {
                 musicData.audioFileURLs.append(filePath)
-                var filename = filePath.absoluteString?.lastPathComponent
-                musicData.audioFileNames.append(filename!)
+              
+                var asset: AVAsset = AVURLAsset.assetWithURL(filePath) as! AVAsset
                 
+                var metadataForAsset: SMetadata = SMetadata()
                 
-                var asset: AnyObject! = AVURLAsset.assetWithURL(filePath)
-                var availableFormats = asset.availableMetadataFormats
-                println("Available formats: \(availableFormats)")
-                var iTunesMetadata = asset.metadataForFormat(AVMetadataFormatID3Metadata)
-                println(asset.metadataForFormat(AVMetadataID3MetadataKeyAlbumTitle))
+                metadataForAsset.metaDataForAVAsset(asset)
+                
+                let metadataTitle = metadataForAsset.metaDataForAVAsset(asset)[0]
+                println("\(metadataTitle)")
+                
+                var titles = AVMetadataItem.metadataItemsFromArray(asset.commonMetadata, withKey: AVMetadataCommonKeyTitle, keySpace: AVMetadataKeySpaceCommon)
+                var title = titles[0] as! AVMetadataItem
+                
+                var albums = AVMetadataItem.metadataItemsFromArray(asset.commonMetadata, withKey: AVMetadataCommonKeyAlbumName, keySpace: AVMetadataKeySpaceCommon)
+                var album = albums[0] as! AVMetadataItem
+                
+                var artists = AVMetadataItem.metadataItemsFromArray(asset.commonMetadata, withKey: AVMetadataCommonKeyArtist, keySpace: AVMetadataKeySpaceCommon)
+                var artist = artists[0] as! AVMetadataItem
+                
+                musicData.audioFileNames.append("\(title.value())")
+                musicData.audioFileAlbumNames.append("\(album.value())")
+                musicData.audioFileArtistNames.append("\(artist.value())")
                 
             }
             println(musicData.audioFileNames)
@@ -146,6 +159,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     {
         selectedSong()
     }
+    
     
     func selectedSong()
     {
@@ -174,6 +188,10 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
       
     }
     
+    @IBAction func openByLink(sender: NSMenuItem)
+    {
+        
+    }
 
 }
 

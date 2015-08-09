@@ -18,14 +18,14 @@ class MusicData: NSObject
     var player: AVAudioPlayer! //The player playing the current song.
     var playQueue: [AVAudioPlayer] = [AVAudioPlayer]() //The Play queue for the songs
     var audioFileNames = [String]() //An array whose elements are the names of the audio files
+    var audioFileAlbumNames = [String]()
+    var audioFileArtistNames = [String]()
     var audioFileURLs: [NSURL] = [NSURL]()
     var currentIndex: Int = 0
     
     
     override init()
     {
-        //Associate the filenames with the files and add them to the playQueue array
-        
         for url in audioFileURLs
         {
             println("Filepath: \(url)")
@@ -34,35 +34,6 @@ class MusicData: NSObject
         if playQueue.count > 0
         {
             player = playQueue[currentIndex]
-        }
-    }
-    
-    func play()
-    {
-        if !playQueue.isEmpty
-        {
-            player.play()
-        }
-        
-    }
-    
-    func pause()
-    {
-        if !playQueue.isEmpty
-        {
-            player.pause()
-        }
-    }
-    
-    var musicLibrary: [NSURL] = [NSURL]()
-    
-    func addToMusicLibrary(urls: Array<AnyObject>)
-    {
-        for url in urls
-        {
-            
-            musicLibrary.append(url as! NSURL)
-          
         }
     }
     
@@ -112,6 +83,7 @@ class MusicData: NSObject
         if player != nil
         {
             player.stop()
+            println("Player is not nil bruh.")
         }
         println(currentIndex)
         currentIndex = index
